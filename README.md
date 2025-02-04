@@ -2,6 +2,11 @@
 
 A beautifully designed passcode screen for restricted areas, built with **Kotlin**, **XML**, and a touch of ❤️.  
 
+## 📽️ Demo  
+[![Passcode Screen Demo](https://i9.ytimg.com/vi/CAlKvUQA82g/mq2.jpg)](https://youtube.com/shorts/CAlKvUQA82g)  
+
+🔒 Watch the **Pretty Passcode Layout** in action!  
+
 ## ✨ Features  
 - Elegant and user-friendly passcode interface  
 - Smooth animations and modern UI  
@@ -13,8 +18,7 @@ A beautifully designed passcode screen for restricted areas, built with **Kotlin
 - **XML** for UI  
 - **Jetpack Components** for modern Android development  
 
-## 📸 Screenshots  
-(Include a few images or GIFs of the passcode screen)  
+
 
 ## 🚀 Getting Started  
 
