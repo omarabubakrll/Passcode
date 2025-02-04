@@ -182,6 +182,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
 
+
     private fun check() {
         if (passcode == "5417") {
             // finish()
