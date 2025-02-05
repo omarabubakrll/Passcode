@@ -24,5 +24,5 @@ A beautifully designed passcode screen for restricted areas, built with **Kotlin
 
 ### 1️⃣ Clone the Repository  
 ```sh
-git clone https://github.com/yourusername/PrettyPasscode.git
+https://github.com/omarabubakrll/Passcode.git
 cd PrettyPasscode
