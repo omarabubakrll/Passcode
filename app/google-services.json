@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "304952248488",
+    "project_id": "dodeal-2938d",
+    "storage_bucket": "dodeal-2938d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304952248488:android:aabd4e8f4968d7948fda9d",
+        "android_client_info": {
+          "package_name": "com.passcode"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmowMc_O24tRgMN3q3K9NNHLvzqW_Y2Jc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

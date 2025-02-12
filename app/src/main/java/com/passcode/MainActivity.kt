@@ -8,11 +8,16 @@ import android.os.Looper
 import android.os.VibrationEffect
 import android.os.Vibrator
 import android.os.VibratorManager
+import android.util.Log
 import android.view.View
 import android.widget.FrameLayout
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
+import java.util.UUID
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -55,6 +60,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btn00.setOnClickListener(this)
         btn001.setOnClickListener(this)
         btn002.setOnClickListener(this)
+
+
     }
 
     override fun onClick(v: View?) {
@@ -62,39 +69,52 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btn01 -> {
                 passcode += "1"
             }
+
             R.id.btn02 -> {
                 passcode += "2"
             }
+
             R.id.btn03 -> {
                 passcode += "3"
             }
+
             R.id.btn04 -> {
                 passcode += "4"
             }
+
             R.id.btn05 -> {
                 passcode += "5"
             }
+
             R.id.btn06 -> {
                 passcode += "6"
             }
+
             R.id.btn07 -> {
                 passcode += "7"
             }
+
             R.id.btn08 -> {
                 passcode += "8"
             }
+
             R.id.btn09 -> {
                 passcode += "9"
             }
+
             R.id.btn00 -> {
                 passcode += "0"
             }
+
             R.id.btn001 -> {
-                passcode += "*"
+                // passcode += "*"
+                passcode = passcode.dropLast(1)
             }
+
             R.id.btn002 -> {
                 passcode += "#"
             }
+
 
         }
     }
@@ -182,7 +202,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
 
-
     private fun check() {
         if (passcode == "5417") {
             // finish()
@@ -218,7 +237,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun vibrate(context: Context, duration: Long = 500) {
         val vibrator = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-            val vibratorManager = context.getSystemService(Context.VIBRATOR_MANAGER_SERVICE) as VibratorManager
+            val vibratorManager =
+                context.getSystemService(Context.VIBRATOR_MANAGER_SERVICE) as VibratorManager
             vibratorManager.defaultVibrator
         } else {
             context.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
