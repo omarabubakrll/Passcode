@@ -1,6 +1,7 @@
 package com.passcode
 
 import android.content.Context
+import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
@@ -18,6 +19,9 @@ import androidx.cardview.widget.CardView
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import java.util.UUID
+import android.telephony.TelephonyManager
+import android.telephony.CellLocation
+import androidx.core.app.ActivityCompat
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -62,8 +66,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btn002.setOnClickListener(this)
 
 
-    }
 
+
+
+    }
+    
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.btn01 -> {
